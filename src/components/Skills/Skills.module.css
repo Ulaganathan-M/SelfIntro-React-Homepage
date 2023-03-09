@@ -1,0 +1,67 @@
+.Skills {
+    background-color: rgb(20, 20, 20);
+    padding-bottom: 5%;
+}
+
+.Skills p {
+    padding-left: 25%;
+    width: 50%;
+}
+.Skills .List ul {
+    color: white;
+    list-style-type: none;
+    padding: 0;
+}
+
+.Skills .Container {
+    display: flex;
+    flex-wrap: wrap;  /* if it is not possible to align in single row it create another row */
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+}
+
+.Skills .Container .List {
+    flex-basis: 40%;  /* flex wrap property used here */
+    
+    background-color: black;
+    box-shadow: 0 0 1vw 0.3vw white;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    margin: 10px;
+
+}
+
+.Skills .List ul {
+    padding-top: 20px;
+    
+}
+
+.Skills .List ul li {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+@media (max-width: 500px){
+
+    .Skills .Container .List {
+        flex-basis: 100%;  /* flex wrap property used here */
+        
+    
+    }
+    .Skills .Container{
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+    
+    
+    .Skills p{
+        padding-left: 10%;
+        width: 80%;
+
+    }
+
+}

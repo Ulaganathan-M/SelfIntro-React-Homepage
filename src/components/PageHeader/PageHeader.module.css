@@ -1,0 +1,26 @@
+.Container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 2%;
+
+}
+
+.Container hr {
+    position: absolute;
+    left: 0;
+    width: 12vw;
+    border: 5px solid rgba(9,9,121,1);
+
+}
+.Container h1 {
+    color: white;
+}
+
+@media(max-width: 400px){
+    .Container hr{
+        display: none;
+    }
+}

@@ -1,0 +1,98 @@
+
+
+.YouTube {
+    background-color: rgb(12, 69, 107);
+    position: relative;
+
+}
+
+.YouTube .Background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    z-index: 0;
+    
+}
+.YouTube .YouTubeContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.YouTube .Videos {
+    width: 70%;
+    z-index: 1;
+}
+.YouTube .Paragraph {
+    width: 65%;
+    z-index: 1;
+    padding-bottom: 20px;
+
+}
+.YouTube .VideoContainer .Thumbnail img {
+    max-width: 489px;
+    width: 100%;
+}
+
+.YouTube .VideoContainer .Text {
+    padding: 2.5% 2.5% 2.5% 2.5%;
+    width: 45%;
+
+}
+.YouTube .VideoContainer .Thumbnail {
+    padding: 2.5% 2.5% 2.5% 2.5%;
+    width: 45%;
+    position: relative;
+
+}
+.YouTube .VideoContainer .Thumbnail .Playbutton .Play{
+    position: absolute;
+    /* height: 30px; */
+    width: 20%;
+    top: 25%;
+    left: 44%;
+    cursor: pointer;
+
+}
+.YouTube .Videos .VideoContainer {
+    display: flex;
+    background-color: black;
+    margin-bottom: 5%;
+    height: 100%;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px white;
+}
+
+@media (max-width: 700px) {
+    .YouTube .Videos .VideoContainer {
+        flex-direction: column;
+        
+    }
+    .YouTube .VideoContainer .Text {
+       
+        width: 80%;
+    
+    }
+    .YouTube .VideoContainer .Thumbnail {
+        
+        width: 80%;
+    
+    }
+}
+    @media (max-width: 500px) {
+        
+        .YouTube .VideoContainer .Text {
+            
+            width: 90%;
+        
+        }
+        .YouTube .VideoContainer .Thumbnail {
+            
+            width: 90%;
+        
+        }
+
+    
+}
+
